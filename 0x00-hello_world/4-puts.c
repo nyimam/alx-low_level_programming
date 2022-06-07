@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Main block - function to print our string
+ * Description: Main block - function to print our string
  * Return: 0
  */
 int main(void)
