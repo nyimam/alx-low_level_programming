@@ -1,6 +1,9 @@
-#include <stdio>
+#include <stdio.h>
 
-int main()
+/* Main function to print our string*/
+
+int main(void)
 {
-	puts("Programming is like building a multilingua puzzle\n");
-}	
+puts("Programming is like building a multilingua puzzle\n");
+return (0);
+}
