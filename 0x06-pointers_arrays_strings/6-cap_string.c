@@ -33,4 +33,5 @@ char *cap_string(char *str)
 				str[i] -= ('a' - 'A');
 		}
 	}
+	return (str);
 }
