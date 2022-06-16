@@ -6,21 +6,22 @@
  */
 char *leet(char *s)
 {
-	int i, ii;
-	char s1[] = "aeotl";
-	char S1[] = "AEOTL";
-	char s2[] = "43071";
+	int i, c = 0;
+	int sl[] = {97, 101, 111, 116, 108};
+	int ul[] = {65, 69, 79, 84, 76};
+	int n[] = {52, 51, 48, 55, 49};
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[c] != '\0')
 	{
-		for (ii = o; ii < 5; ii++)
+		for (i = 0; i < 5; i++)
 		{
-			if (s[i] == s1[ii] || s[i] == S1[ii])
+			if (s[c] == sl[i] || s[c] == ul[i])
 			{
-				s[i] = s2[ii];
+				s[c] = n[i];
 				break;
 			}
 		}
+		c++;
 	}
 	return (s);
 }
