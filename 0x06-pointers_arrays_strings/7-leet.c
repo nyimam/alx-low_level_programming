@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *leet - transform to leet
+ * leet - transform to leet
  * @str: string
  * Return: transformed string
  */
