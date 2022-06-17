@@ -9,14 +9,14 @@ int main(void)
 	int i;
 	unsigned long int a = 0, b = 1, next = 0;
 
-	for (i = 0; i < 96; i++)
+	for (i = 0; i <= 98; i++)
 	{
 		next = a + b;
 		a = b;
 		b = next;
 		printf("%lu", next);
 
-		if (i < 95)
+		if (i != 98)
 			printf(", ");
 	}
 	putchar('\n');
