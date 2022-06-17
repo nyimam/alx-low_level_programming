@@ -15,8 +15,7 @@ int main(void)
 			if (a != i && i < a)
 			{
 				putchar('0' + i);
-				putchar('0' + a);
-			
+				putchar('0' + a);	
 				if (i + a != 17)
 				{
 					putchar(',');
@@ -24,7 +23,7 @@ int main(void)
 				}
 			}
 		}
-	}	
+	}
 	putchar('\n');
 	return (0);
 }
