@@ -1,20 +1,40 @@
 #include "main.h"
 /**
- * times_table- prints every minute of the day
+ *  times_table - prints times table
+ *  Return: void
  */
 void times_table(void)
 {
-	int i, j;
+	int a = 0;
+	int b, rep;
 
-	for (i = 0; i < 10; i++)
+	while (a <= 9)
 	{
-		for (j = 0; j < 10; j++)
+		b = 0;
+		while (b <= 9)
 		{
-			_putchar(i * j);
-			_putchar(',');
-			_putchar(' ');
+			rep = a * b;
+			if (b == 0)
+				_putchar('0' + rep);
+			else if (rep < 10)
+			{
+				_putchar(' ');
+				_putchar('0' + rep);
+			}
+			else
+			{
+				_putchar('0' + rep / 10);
+				_putchar('0' + rep % 10);
+			}
+
+			if (b < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			b++;
 		}
-		_putchar('\n');
+		putchar('\n');
+		a++;
 	}
 }
-
