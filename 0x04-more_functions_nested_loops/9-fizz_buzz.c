@@ -11,17 +11,19 @@ int main(void)
 	{
 		a = i + 1;
 
-		if (a % 3 == 0 && a % 5 != 0)
+		if (a % 3 == 0)
 			printf("Fizz ");
-		else if (a % 5 == 0 && a % 3 != 0)
-			printf("Buzz ");
+		else if (a % 5 == 0)
+		{
+			if (a == 100)
+				printf("Buzz");
+			else
+				printf("Buzz ");
+		}
 		else if (a % 3 == 0 && a % 5 == 0)
 			printf("FizzBuzz ");
 		else
 			printf("%i ", a);
-
-		if (a == 100)
-			printf("Buzz");
 	}
 	printf("\n");
 	return (0);
