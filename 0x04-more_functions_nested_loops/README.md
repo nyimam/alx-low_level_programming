@@ -7,4 +7,5 @@ Learning Functions and Nested Loops
 6. 5-more_numbers: prints number 0-14 followed by a new line 10 times\n
 7. 6-print_line: Prints line of length n
 8. 7-print_diagonal: prints diagonal of length n
-9. 8-print_square: prints square of size n\n
+9. 8-print_square: prints square of size n
+10. 9-fizz_buzz: prints 0 to 100 and fizz if its a multiple of 3, buzz if its a multiple of 5 and Fizzbuzz for multiple of both
