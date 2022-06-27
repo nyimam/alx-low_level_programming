@@ -20,6 +20,6 @@ void print_diagonal(int n)
 		i++;
 	}
 
-	if (n > 0)
+	if (n <= 0)
 		_putchar('\n');
 }
