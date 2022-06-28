@@ -10,7 +10,7 @@ int main(void)
 	long divisor = 2;
 	long lpf = 0;
 
-	while(num != 1)
+	while (num != 1)
 	{
 		if (num % divisor == 0)
 		{
