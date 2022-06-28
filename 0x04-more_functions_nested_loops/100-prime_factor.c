@@ -6,17 +6,20 @@
  */
 int main(void)
 {
-	unsigned int long num = 612852475143, i = (int) sqrt(num);
+	long num = 612852475143;
+	long divisor = 2;
+	long lpf = 0;
 
-	while(1)
+	while(num != 1)
 	{
-		if (num % i == 0)
+		if (num % divisor == 0)
 		{
-			printf("%lu \n", num / i);
-			break;
+			num = num / divisor;
+			lpf = divisor;
 		}
-		i--;
+		divisor += 1;
 	}
+	printf("%ld\n", lpf);
 
 	return (0);
 }
