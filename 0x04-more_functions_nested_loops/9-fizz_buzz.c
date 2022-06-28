@@ -5,12 +5,10 @@
  */
 int main(void)
 {
-	int i, a;
+	int a;
 
-	for (i = 0; i < 100; i++)
+	for (a = 1; i <= 100; i++)
 	{
-		a = i + 1;
-
 		if (a % 3 == 0)
 			printf("Fizz");
 		else if (a % 5 == 0)
