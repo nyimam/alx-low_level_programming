@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio>
 /**
  * _strlen - prints out the length of the string
  * @s: pointer to the string (array of chars)
@@ -7,7 +6,10 @@
  */
 int _strlen(char *s)
 {
-	int a = sizeof(*s);
+	int a = 0;
 
-	return (a / 4);
+	while(s[a])
+		a++;
+
+	return (a);
 }
