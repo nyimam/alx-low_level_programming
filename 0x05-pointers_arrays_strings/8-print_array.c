@@ -8,7 +8,7 @@
  */
 void print_array(int *a, int n)
 {
-	int length, b;
+	int length;
 
 	for (length = 0; n >= 0 && length < (n - 1); length++)
 		printf("%i, ", a[length]);
