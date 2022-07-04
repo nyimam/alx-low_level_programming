@@ -10,10 +10,8 @@ void print_array(int *a, int n)
 {
 	int length;
 
-	if (n < 0)
+	if (n <= 0)
 		printf("\n");
-	else if (n == 0)
-		printf("%i\n", a[0]);
 	else if (n > 0)
 	{
 		for (length = 0; length < (n - 1); length++)
