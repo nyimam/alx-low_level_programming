@@ -11,7 +11,7 @@ int is_prime_number(int n)
 }
 
 /**
- * check_prime - check alll number 
+ * check_prime - check alll number
  * @n: number
  * @resp: int
  * Return: int
