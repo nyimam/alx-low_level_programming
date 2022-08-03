@@ -6,7 +6,7 @@
  * @argv: array of argc
  * Return: 0
  */
-int main(int __attribute__((unused)) argc, char *argv)
+int main(int argc, char const *argv[])
 {
 	(void)argv;
 	printf("%i\n", argc - 1);
