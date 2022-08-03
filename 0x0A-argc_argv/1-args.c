@@ -8,11 +8,7 @@
  */
 int main(int __attribute__((unused)) argc, char *argv)
 {
-	int i = 0;
-
-	while (argv[])
-		i++;
-
-	printf("%i\n", i);
+	(void)argv;
+	printf("%i\n", argc - 1);
 	return (0);
 }
