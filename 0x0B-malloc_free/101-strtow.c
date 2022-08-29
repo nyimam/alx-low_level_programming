@@ -38,6 +38,9 @@ char **strtow(char *str)
 	n = wrdcnt(str);
 	if (n == 1)
 		return (NULL);
+	w = (char **)malloc(n * sizeof(char *));
+	if (w == NULL)
+		return (NULL);
 	w[n - 1] = NULL;
 	i = 0;
 	while (str[i])
@@ -57,8 +60,7 @@ char **strtow(char *str)
 				free(w);
 				return (NULL);
 			}
-			for (l = 0; l < j;
-					l++)
+			for (l = 0; l < j; l++)
 				w[wc][l] = str[i + 1];
 			w[wc][l] = '\0';
 			wc++;
